@@ -8,7 +8,20 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      FRONTEND_URL,
+      "https://marketplace-ropa-70kencl8s-hid3onbushs-projects.vercel.app",
+    ],
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 app.use(express.json());
 
 const client = new MercadoPagoConfig({
@@ -34,8 +47,6 @@ app.post("/create_preference", async (req, res) => {
   try {
     const { items, customer, externalReference } = req.body;
 
-    const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
-
     const preference = new Preference(client);
 
     const response = await preference.create({
@@ -51,13 +62,13 @@ app.post("/create_preference", async (req, res) => {
           email: customer?.email || "",
         },
         external_reference: externalReference || null,
-        notification_url:
-          "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+        notification_url: `${process.env.MP_BACKEND_URL || "https://mercadopago-backend-production.up.railway.app"}/webhook`,
         back_urls: {
-          success: `${frontendUrl}/payment/success`,
-          failure: `${frontendUrl}/payment/failure`,
-          pending: `${frontendUrl}/payment/pending`,
+          success: `${FRONTEND_URL}/payment/success`,
+          failure: `${FRONTEND_URL}/payment/failure`,
+          pending: `${FRONTEND_URL}/payment/pending`,
         },
+        auto_return: "approved",
       },
     });
 
@@ -71,69 +82,6 @@ app.post("/create_preference", async (req, res) => {
       details: error?.message || error,
     });
   }
-});
-
-app.post("/webhook", async (req, res) => {
-  try {
-    console.log("=== WEBHOOK RECIBIDO ===");
-    console.log("Query:", req.query);
-    console.log("Body:", req.body);
-
-    res.sendStatus(200);
-
-    const topic =
-      req.query.type ||
-      req.query.topic ||
-      req.body.type ||
-      req.body.topic;
-
-    const resourceId =
-      req.body?.data?.id ||
-      req.query["data.id"] ||
-      req.query.id ||
-      req.body?.resource?.split("/").pop() ||
-      req.body?.id;
-
-    console.log("Topic:", topic);
-    console.log("Resource ID:", resourceId);
-
-    if (topic !== "payment" || !resourceId) {
-      console.log("No es un pago válido o no trae ID");
-      return;
-    }
-
-    const paymentClient = new Payment(client);
-    const payment = await paymentClient.get({ id: resourceId });
-
-    console.log("Pago real:", {
-      id: payment.id,
-      status: payment.status,
-      external_reference: payment.external_reference,
-    });
-
-    const orders = getLocalOrders();
-
-    orders.unshift({
-      webhookReceivedAt: new Date().toISOString(),
-      paymentId: payment.id,
-      paymentStatus: payment.status,
-      paymentStatusDetail: payment.status_detail,
-      externalReference: payment.external_reference || null,
-      payerEmail: payment.payer?.email || null,
-      transactionAmount: payment.transaction_amount || null,
-      raw: payment,
-    });
-
-    saveLocalOrders(orders);
-  } catch (error) {
-    console.error("Error procesando webhook:", error);
-  }
-});
-
-const PORT = 3001;
-
-app.listen(PORT, () => {
-  console.log(`Servidor Mercado Pago en http://localhost:${PORT}`);
 });
 
 app.get("/payment-status/:id", async (req, res) => {
@@ -157,4 +105,52 @@ app.get("/payment-status/:id", async (req, res) => {
       details: error?.message || error,
     });
   }
+});
+
+app.post("/webhook", async (req, res) => {
+  try {
+    console.log("=== WEBHOOK RECIBIDO ===");
+    console.log("Query:", req.query);
+    console.log("Body:", req.body);
+
+    res.sendStatus(200);
+
+    const topic =
+      req.query.type || req.query.topic || req.body.type || req.body.topic;
+
+    const resourceId =
+      req.body?.data?.id ||
+      req.query["data.id"] ||
+      req.query.id ||
+      req.body?.resource?.split("/").pop() ||
+      req.body?.id;
+
+    if (topic !== "payment" || !resourceId) return;
+
+    const paymentClient = new Payment(client);
+    const payment = await paymentClient.get({ id: resourceId });
+
+    const orders = getLocalOrders();
+
+    orders.unshift({
+      webhookReceivedAt: new Date().toISOString(),
+      paymentId: payment.id,
+      paymentStatus: payment.status,
+      paymentStatusDetail: payment.status_detail,
+      externalReference: payment.external_reference || null,
+      payerEmail: payment.payer?.email || null,
+      transactionAmount: payment.transaction_amount || null,
+      raw: payment,
+    });
+
+    saveLocalOrders(orders);
+  } catch (error) {
+    console.error("Error procesando webhook:", error);
+  }
+});
+
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Servidor Mercado Pago en http://localhost:${PORT}`);
 });
