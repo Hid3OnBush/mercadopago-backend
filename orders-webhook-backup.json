@@ -1,0 +1,2801 @@
+[
+  {
+    "webhookReceivedAt": "2026-04-23T18:48:18.259Z",
+    "paymentId": 156111196410,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776970086198",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 699,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Sudadera Beige Premium",
+            "unit_price": "699"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "55790534",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "MEX",
+        "date_created": "2026-04-23T14:48:42.000-04:00",
+        "date_last_updated": "2026-04-23T14:48:42.000-04:00",
+        "expiration_month": 11,
+        "expiration_year": 2030,
+        "first_six_digits": "557905",
+        "id": "9799808774",
+        "last_four_digits": "2647",
+        "tags": [
+          "debit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 32.95,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:48:42.000-04:00",
+          "external_charge_id": "01KPXTRH0BR5BRCE6MMF77Z0XC",
+          "id": "156111196410-001",
+          "last_updated": "2026-04-23T14:48:42.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:48:42.262-04:00",
+          "execution_id": "01KPXTRGZMYQWTCF318NG85ASC"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:48:42.000-04:00",
+      "date_created": "2026-04-23T14:48:42.000-04:00",
+      "date_last_updated": "2026-04-23T14:48:42.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Sudadera Beige Premium",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776970086198",
+      "fee_details": [
+        {
+          "amount": 32.95,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156111196410,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "160",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:48:42.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40240260480",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "112"
+          }
+        },
+        "id": "debmaster",
+        "issuer_id": "160",
+        "type": "debit_card"
+      },
+      "payment_method_id": "debmaster",
+      "payment_type_id": "debit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 699,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 699,
+        "net_received_amount": 666.05,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 699
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:48:43 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "24732996-29dd-42cd-a4a4-41eed6875350"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:48:18.257Z",
+    "paymentId": 156111196410,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776970086198",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 699,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Sudadera Beige Premium",
+            "unit_price": "699"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "55790534",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "MEX",
+        "date_created": "2026-04-23T14:48:42.000-04:00",
+        "date_last_updated": "2026-04-23T14:48:42.000-04:00",
+        "expiration_month": 11,
+        "expiration_year": 2030,
+        "first_six_digits": "557905",
+        "id": "9799808774",
+        "last_four_digits": "2647",
+        "tags": [
+          "debit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 32.95,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:48:42.000-04:00",
+          "external_charge_id": "01KPXTRH0BR5BRCE6MMF77Z0XC",
+          "id": "156111196410-001",
+          "last_updated": "2026-04-23T14:48:42.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:48:42.262-04:00",
+          "execution_id": "01KPXTRGZMYQWTCF318NG85ASC"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:48:42.000-04:00",
+      "date_created": "2026-04-23T14:48:42.000-04:00",
+      "date_last_updated": "2026-04-23T14:48:42.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Sudadera Beige Premium",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776970086198",
+      "fee_details": [
+        {
+          "amount": 32.95,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156111196410,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "160",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:48:42.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40240260480",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "112"
+          }
+        },
+        "id": "debmaster",
+        "issuer_id": "160",
+        "type": "debit_card"
+      },
+      "payment_method_id": "debmaster",
+      "payment_type_id": "debit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 699,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 699,
+        "net_received_amount": 666.05,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 699
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:48:43 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "2951cfbe-7cd7-44ef-a700-6220eb9588f5"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:47:04.766Z",
+    "paymentId": 155353059209,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776970003006",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": null,
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {},
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:47:28.000-04:00",
+          "external_charge_id": "01KPXTP93ZB10MGSWKN008HK9K",
+          "id": "155353059209-001",
+          "last_updated": "2026-04-23T14:47:28.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:47:28.649-04:00",
+          "execution_id": "01KPXTP93478QKWQ8M6201ZM36"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:47:28.000-04:00",
+      "date_created": "2026-04-23T14:47:28.000-04:00",
+      "date_last_updated": "2026-04-23T14:47:28.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776970003006",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 155353059209,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "2018",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:47:28.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40240217896",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "id": "account_money",
+        "issuer_id": "2018",
+        "type": "account_money"
+      },
+      "payment_method_id": "account_money",
+      "payment_type_id": "account_money",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": null,
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 0,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:47:29 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "75efc349-aac3-4e5a-82db-0be3e92b82b4"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:47:04.728Z",
+    "paymentId": 155353059209,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776970003006",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": null,
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {},
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:47:28.000-04:00",
+          "external_charge_id": "01KPXTP93ZB10MGSWKN008HK9K",
+          "id": "155353059209-001",
+          "last_updated": "2026-04-23T14:47:28.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:47:28.649-04:00",
+          "execution_id": "01KPXTP93478QKWQ8M6201ZM36"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:47:28.000-04:00",
+      "date_created": "2026-04-23T14:47:28.000-04:00",
+      "date_last_updated": "2026-04-23T14:47:28.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776970003006",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 155353059209,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "2018",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:47:28.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40240217896",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "id": "account_money",
+        "issuer_id": "2018",
+        "type": "account_money"
+      },
+      "payment_method_id": "account_money",
+      "payment_type_id": "account_money",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": null,
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 0,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:47:29 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "c77bef85-1315-4b3f-add3-7d41b05eaad7"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:06:36.454Z",
+    "paymentId": 156106172888,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776967575537",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "55790534",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "MEX",
+        "date_created": "2026-04-23T14:07:00.000-04:00",
+        "date_last_updated": "2026-04-23T14:07:00.000-04:00",
+        "expiration_month": 11,
+        "expiration_year": 2030,
+        "first_six_digits": "557905",
+        "id": "9799808774",
+        "last_four_digits": "2647",
+        "tags": [
+          "debit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:07:00.000-04:00",
+          "external_charge_id": "01KPXRC5R5RQ5HXQP7F9BTFYRG",
+          "id": "156106172888-001",
+          "last_updated": "2026-04-23T14:07:00.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:07:00.370-04:00",
+          "execution_id": "01KPXRC5QFB53N5GVS0P24PT0A"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:07:00.000-04:00",
+      "date_created": "2026-04-23T14:07:00.000-04:00",
+      "date_last_updated": "2026-04-23T14:07:00.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776967575537",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156106172888,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "160",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:07:00.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40239130692",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "112"
+          }
+        },
+        "id": "debmaster",
+        "issuer_id": "160",
+        "type": "debit_card"
+      },
+      "payment_method_id": "debmaster",
+      "payment_type_id": "debit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:07:01 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "40a263d3-2b8b-4696-9afe-037b2a1c2562"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:06:36.322Z",
+    "paymentId": 156106172888,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776967575537",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "55790534",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "MEX",
+        "date_created": "2026-04-23T14:07:00.000-04:00",
+        "date_last_updated": "2026-04-23T14:07:00.000-04:00",
+        "expiration_month": 11,
+        "expiration_year": 2030,
+        "first_six_digits": "557905",
+        "id": "9799808774",
+        "last_four_digits": "2647",
+        "tags": [
+          "debit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:07:00.000-04:00",
+          "external_charge_id": "01KPXRC5R5RQ5HXQP7F9BTFYRG",
+          "id": "156106172888-001",
+          "last_updated": "2026-04-23T14:07:00.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:07:00.370-04:00",
+          "execution_id": "01KPXRC5QFB53N5GVS0P24PT0A"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:07:00.000-04:00",
+      "date_created": "2026-04-23T14:07:00.000-04:00",
+      "date_last_updated": "2026-04-23T14:07:00.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776967575537",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156106172888,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "160",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:07:00.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40239130692",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "112"
+          }
+        },
+        "id": "debmaster",
+        "issuer_id": "160",
+        "type": "debit_card"
+      },
+      "payment_method_id": "debmaster",
+      "payment_type_id": "debit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:07:01 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "665aaf3a-f5d9-4551-be3e-6f562b12fa4c"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:04:15.765Z",
+    "paymentId": 156105857628,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776967426811",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "55790534",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "MEX",
+        "date_created": "2026-04-23T14:04:39.000-04:00",
+        "date_last_updated": "2026-04-23T14:04:39.000-04:00",
+        "expiration_month": 11,
+        "expiration_year": 2030,
+        "first_six_digits": "557905",
+        "id": "9799808774",
+        "last_four_digits": "2647",
+        "tags": [
+          "debit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:04:39.000-04:00",
+          "external_charge_id": "01KPXR7WCHQF8HEPZYETGJBAWK",
+          "id": "156105857628-001",
+          "last_updated": "2026-04-23T14:04:39.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:04:39.712-04:00",
+          "execution_id": "01KPXR7WBY3GKB6M15QDSE6MN2"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:04:40.000-04:00",
+      "date_created": "2026-04-23T14:04:39.000-04:00",
+      "date_last_updated": "2026-04-23T14:04:40.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776967426811",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156105857628,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "160",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:04:40.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40210308557",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "112"
+          }
+        },
+        "id": "debmaster",
+        "issuer_id": "160",
+        "type": "debit_card"
+      },
+      "payment_method_id": "debmaster",
+      "payment_type_id": "debit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:04:40 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "252d78a0-b713-4e70-9a16-f971b96c61da"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T18:04:15.662Z",
+    "paymentId": 156105857628,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776967426811",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "55790534",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "MEX",
+        "date_created": "2026-04-23T14:04:39.000-04:00",
+        "date_last_updated": "2026-04-23T14:04:39.000-04:00",
+        "expiration_month": 11,
+        "expiration_year": 2030,
+        "first_six_digits": "557905",
+        "id": "9799808774",
+        "last_four_digits": "2647",
+        "tags": [
+          "debit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-23T14:04:39.000-04:00",
+          "external_charge_id": "01KPXR7WCHQF8HEPZYETGJBAWK",
+          "id": "156105857628-001",
+          "last_updated": "2026-04-23T14:04:39.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-23T14:04:39.712-04:00",
+          "execution_id": "01KPXR7WBY3GKB6M15QDSE6MN2"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-23T14:04:40.000-04:00",
+      "date_created": "2026-04-23T14:04:39.000-04:00",
+      "date_last_updated": "2026-04-23T14:04:40.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776967426811",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156105857628,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "160",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-23T14:04:40.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40210308557",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "112"
+          }
+        },
+        "id": "debmaster",
+        "issuer_id": "160",
+        "type": "debit_card"
+      },
+      "payment_method_id": "debmaster",
+      "payment_type_id": "debit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 18:04:40 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "23a15a61-adcd-47f9-accc-06e3ed4c5868"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T01:57:42.745Z",
+    "paymentId": 155260716407,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776909446561",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "41740005",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "BRA",
+        "date_created": "2026-04-22T21:58:05.000-04:00",
+        "date_last_updated": "2026-04-22T21:58:05.000-04:00",
+        "expiration_month": 4,
+        "expiration_year": 2044,
+        "first_six_digits": "417400",
+        "id": "9799806780",
+        "last_four_digits": "0553",
+        "tags": [
+          "credit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-22T21:58:05.000-04:00",
+          "external_charge_id": "01KPW0Y1DFCW74ZSJ3DKSYVVDT",
+          "id": "155260716407-001",
+          "last_updated": "2026-04-22T21:58:05.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-22T21:58:05.500-04:00",
+          "execution_id": "01KPW0Y1CN0M30ZDFNTKT68RKF"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-22T21:58:05.000-04:00",
+      "date_created": "2026-04-22T21:58:05.000-04:00",
+      "date_last_updated": "2026-04-22T21:58:05.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776909446561",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 155260716407,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "166",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-22T21:58:05.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40195422365",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "8847752"
+          }
+        },
+        "id": "visa",
+        "issuer_id": "166",
+        "type": "credit_card"
+      },
+      "payment_method_id": "visa",
+      "payment_type_id": "credit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 01:58:06 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "54519aed-11c8-405b-9a5d-1bd8101984f2"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T01:57:42.742Z",
+    "paymentId": 155260716407,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": "ORDER-1776909446561",
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "41740005",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "BRA",
+        "date_created": "2026-04-22T21:58:05.000-04:00",
+        "date_last_updated": "2026-04-22T21:58:05.000-04:00",
+        "expiration_month": 4,
+        "expiration_year": 2044,
+        "first_six_digits": "417400",
+        "id": "9799806780",
+        "last_four_digits": "0553",
+        "tags": [
+          "credit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-22T21:58:05.000-04:00",
+          "external_charge_id": "01KPW0Y1DFCW74ZSJ3DKSYVVDT",
+          "id": "155260716407-001",
+          "last_updated": "2026-04-22T21:58:05.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-22T21:58:05.500-04:00",
+          "execution_id": "01KPW0Y1CN0M30ZDFNTKT68RKF"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-22T21:58:05.000-04:00",
+      "date_created": "2026-04-22T21:58:05.000-04:00",
+      "date_last_updated": "2026-04-22T21:58:05.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": "ORDER-1776909446561",
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 155260716407,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "166",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-22T21:58:05.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40195422365",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "8847752"
+          }
+        },
+        "id": "visa",
+        "issuer_id": "166",
+        "type": "credit_card"
+      },
+      "payment_method_id": "visa",
+      "payment_type_id": "credit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 01:58:06 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "0f2ee781-9407-4bab-82f2-cbed793d52a4"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "webhookReceivedAt": "2026-04-23T01:40:02.026Z",
+    "paymentId": 156016541040,
+    "paymentStatus": "approved",
+    "paymentStatusDetail": "accredited",
+    "externalReference": null,
+    "payerEmail": "test_user_8556970707033542515@testuser.com",
+    "transactionAmount": 399,
+    "raw": {
+      "accounts_info": null,
+      "acquirer_reconciliation": [],
+      "additional_info": {
+        "ip_address": "187.194.131.168",
+        "items": [
+          {
+            "quantity": "1",
+            "title": "Playera Oversize Negra",
+            "unit_price": "399"
+          }
+        ],
+        "payer": {
+          "first_name": "OSCAR"
+        },
+        "tracking_id": "platform:v1-blacklabel,so:ALL,type:N/A,security:none"
+      },
+      "authorization_code": "301299",
+      "binary_mode": false,
+      "brand_id": null,
+      "build_version": "3.153.0-rc-3",
+      "call_for_authorize_id": null,
+      "captured": true,
+      "card": {
+        "bin": "41740005",
+        "cardholder": {
+          "identification": {
+            "number": null,
+            "type": null
+          },
+          "name": "APRO"
+        },
+        "country": "BRA",
+        "date_created": "2026-04-22T21:40:24.000-04:00",
+        "date_last_updated": "2026-04-22T21:40:24.000-04:00",
+        "expiration_month": 4,
+        "expiration_year": 2044,
+        "first_six_digits": "417400",
+        "id": "9799806780",
+        "last_four_digits": "0553",
+        "tags": [
+          "credit"
+        ]
+      },
+      "charges_details": [
+        {
+          "accounts": {
+            "from": "collector",
+            "to": "mp"
+          },
+          "amounts": {
+            "original": 20.8,
+            "refunded": 0
+          },
+          "client_id": 0,
+          "date_created": "2026-04-22T21:40:24.000-04:00",
+          "external_charge_id": "01KPVZXNCRANMP0KCXMCDZWCYZ",
+          "id": "156016541040-001",
+          "last_updated": "2026-04-22T21:40:24.000-04:00",
+          "metadata": {
+            "reason": "",
+            "source": "proc-svc-charges",
+            "source_detail": "processing_fee_charge"
+          },
+          "name": "mercadopago_fee",
+          "refund_charges": [],
+          "reserve_id": null,
+          "type": "fee",
+          "update_charges": []
+        }
+      ],
+      "charges_execution_info": {
+        "internal_execution": {
+          "date": "2026-04-22T21:40:24.611-04:00",
+          "execution_id": "01KPVZXNC3KTNCRDKETBVJ029N"
+        }
+      },
+      "collector_id": 3350994653,
+      "corporation_id": null,
+      "counter_currency": null,
+      "coupon_amount": 0,
+      "currency_id": "MXN",
+      "date_approved": "2026-04-22T21:40:25.000-04:00",
+      "date_created": "2026-04-22T21:40:24.000-04:00",
+      "date_last_updated": "2026-04-22T21:40:25.000-04:00",
+      "date_of_expiration": null,
+      "deduction_schema": null,
+      "description": "Playera Oversize Negra",
+      "differential_pricing_id": null,
+      "external_reference": null,
+      "fee_details": [
+        {
+          "amount": 20.8,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "financing_group": null,
+      "id": 156016541040,
+      "installments": 1,
+      "integrator_id": null,
+      "issuer_id": "166",
+      "live_mode": true,
+      "marketplace_owner": null,
+      "merchant_account_id": null,
+      "merchant_number": null,
+      "metadata": {},
+      "money_release_date": "2026-04-22T21:40:25.000-04:00",
+      "money_release_schema": null,
+      "money_release_status": "released",
+      "notification_url": "https://stingray-proofs-skiing.ngrok-free.dev/webhook",
+      "operation_type": "regular_payment",
+      "order": {
+        "id": "40223854558",
+        "type": "mercadopago"
+      },
+      "payer": {
+        "email": "test_user_8556970707033542515@testuser.com",
+        "entity_type": null,
+        "first_name": null,
+        "id": "3350937135",
+        "identification": {
+          "number": "aaaaaa11111111a111",
+          "type": "IFE"
+        },
+        "last_name": null,
+        "operator_id": null,
+        "phone": {
+          "number": null,
+          "extension": null,
+          "area_code": null
+        },
+        "type": null
+      },
+      "payment_method": {
+        "data": {
+          "routing_data": {
+            "merchant_account_id": "8847752"
+          }
+        },
+        "id": "visa",
+        "issuer_id": "166",
+        "type": "credit_card"
+      },
+      "payment_method_id": "visa",
+      "payment_type_id": "credit_card",
+      "platform_id": null,
+      "point_of_interaction": {
+        "application_data": {
+          "name": "checkout-off",
+          "operating_system": null,
+          "version": "v2"
+        },
+        "business_info": {
+          "branch": "Merchant Services",
+          "sub_unit": "checkout_pro",
+          "unit": "online_payments"
+        },
+        "location": {
+          "source": "Collector",
+          "state_id": "NN"
+        },
+        "transaction_data": {
+          "e2e_id": null
+        },
+        "type": "CHECKOUT"
+      },
+      "pos_id": null,
+      "processing_mode": "aggregator",
+      "refunds": [],
+      "release_info": null,
+      "shipping_amount": 0,
+      "sponsor_id": null,
+      "statement_descriptor": "Mercadopago*fake",
+      "status": "approved",
+      "status_detail": "accredited",
+      "store_id": null,
+      "tags": null,
+      "taxes_amount": 0,
+      "tenant_context": "mp",
+      "transaction_amount": 399,
+      "transaction_amount_refunded": 0,
+      "transaction_details": {
+        "acquirer_reference": null,
+        "external_resource_url": null,
+        "financial_institution": null,
+        "installment_amount": 399,
+        "net_received_amount": 378.2,
+        "overpaid_amount": 0,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null,
+        "total_paid_amount": 399
+      },
+      "api_response": {
+        "status": 200,
+        "headers": {
+          "date": [
+            "Thu, 23 Apr 2026 01:40:25 GMT"
+          ],
+          "content-type": [
+            "application/json;charset=UTF-8"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "vary": [
+            "Accept-Encoding, Accept,Accept-Encoding"
+          ],
+          "cache-control": [
+            "max-age=0"
+          ],
+          "x-api-server-segment": [
+            "legacy"
+          ],
+          "x-content-type-options": [
+            "nosniff"
+          ],
+          "x-request-id": [
+            "39c36a86-c4b3-4eac-a323-3badb2728595"
+          ],
+          "x-xss-protection": [
+            "1; mode=block"
+          ],
+          "strict-transport-security": [
+            "max-age=16070400; includeSubDomains; preload, max-age=31536000; includeSubDomains"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "access-control-allow-headers": [
+            "Content-Type"
+          ],
+          "access-control-allow-methods": [
+            "PUT, GET, POST, DELETE, OPTIONS"
+          ],
+          "access-control-max-age": [
+            "86400"
+          ],
+          "timing-allow-origin": [
+            "*"
+          ],
+          "content-encoding": [
+            "gzip"
+          ]
+        }
+      }
+    }
+  }
+]
