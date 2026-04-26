@@ -163,6 +163,6 @@ console.error("Error procesando webhook:", error);
 }
 });
 
-app.listen(PORT, () => {
-console.log(`Servidor Mercado Pago en http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+console.log(`Servidor Mercado Pago escuchando en puerto ${PORT}`);
 });
