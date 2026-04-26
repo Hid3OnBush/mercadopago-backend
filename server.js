@@ -10,9 +10,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
-const MP_BACKEND_URL =
-process.env.MP_BACKEND_URL ||
-"https://mercadopago-backend-production.up.railway.app";
+const MP_BACKEND_URL =process.env.MP_BACKEND_URL || "https://mercadopago-backend-production.up.railway.app";
 
 app.use(cors());
 app.use(express.json());
